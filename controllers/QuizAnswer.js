@@ -15,6 +15,7 @@ const getAnswer = async (req, res, next) => {
       .populate("SubCategoryId")
       .populate("ServiceId");
 
+    console.log("🚀 ~ quiz-----------back line 18", quiz);
     let datatosent = {
       message: "Quiz list",
       quiz,
